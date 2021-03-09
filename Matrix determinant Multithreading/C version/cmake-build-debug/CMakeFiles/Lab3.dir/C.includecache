@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Programming/Java/Java Projects/C version/matrix.h
+
+C:/Programming/Java/Java Projects/C version/parallel.c
+stdio.h
+-
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+time.h
+-
+memory.h
+-
+string.h
+-
+stdbool.h
+-
+math.h
+-
+matrix.h
+C:/Programming/Java/Java Projects/C version/matrix.h
+

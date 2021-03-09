@@ -1,0 +1,3 @@
+C:/Programming/Java/Java Projects/C version/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Programming/Java/Java Projects/C version/cmake-build-debug/CMakeFiles/Lab3.dir
+C:/Programming/Java/Java Projects/C version/cmake-build-debug/CMakeFiles/edit_cache.dir
