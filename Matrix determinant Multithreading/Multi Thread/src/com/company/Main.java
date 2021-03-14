@@ -11,16 +11,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        GlobalMatrix.matrixSize = 11;
         GlobalMatrix.threadSize = 11;
-        GlobalMatrix.matrix = new Matrix(GlobalMatrix.matrixSize);
+        GlobalMatrix.matrix = new Matrix();
 
         GlobalMatrix.matrix.readData();
 
         long timeStart = System.currentTimeMillis();
-        System.out.println("Det is " + ParallelThreadsCreator.calcDeterminant(GlobalMatrix.matrix));
+        System.out.println("Parallel is " + ParallelThreadsCreator.calcDeterminant(GlobalMatrix.matrix));
         long timeEnd = System.currentTimeMillis();
         double elapsedTime = (double) (timeEnd - timeStart) / 1000;
-        System.out.println("Time is " + elapsedTime + "s");
+        System.out.println("time is " + elapsedTime + "s");
     }
 }

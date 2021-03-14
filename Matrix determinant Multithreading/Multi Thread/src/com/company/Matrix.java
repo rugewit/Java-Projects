@@ -16,6 +16,8 @@ public class Matrix {
         data = new int[this.size][this.size];
     }
 
+    public Matrix() {}
+
     void print(){
         for(int i = 0;i < size; i++){
             for(int j = 0;j < size; j++){
@@ -26,7 +28,8 @@ public class Matrix {
     }
 
     public void readData(){
-        String fullPath = "C:/Users/rugiv/IdeaProjects/untitled1/src/input.txt";
+        //String fullPath = "C:/Users/rugiv/IdeaProjects/untitled1/src/input.txt";
+        String fullPath = "/home/rugewit/Programming/Current Study/3 sem/OS/Lab3/tests/data5.txt";
         File file = new File(fullPath);
         if (file.exists() && file.canRead()){
             Scanner reader = null;
@@ -35,6 +38,9 @@ public class Matrix {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+            size = reader.nextInt();
+            data = new int[size][size];
+            GlobalMatrix.matrixSize = size;
             for(int i = 0;i < size; i++){
                 for(int j = 0;j < size; j++){
                     data[i][j] = reader.nextInt();
